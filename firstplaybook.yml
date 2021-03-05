@@ -10,3 +10,8 @@
     apt:
      name: apache2
      state: present 
+
+  - name: i am installing git on ubuntu 16.04
+    apt:
+     name: git
+     state: present 
