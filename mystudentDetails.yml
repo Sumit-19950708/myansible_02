@@ -1,0 +1,11 @@
+---
+- mystudentDetails:
+  - name: rakesh
+    phone: 9822108126
+    email: rakesh@gmail.com
+    address: Daryapur
+
+  - name: harsh
+    phone: 9767381850
+    email: harsh@gmail.com
+    address: Chennai

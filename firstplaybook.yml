@@ -1,0 +1,12 @@
+---
+- host: all
+  become: yes
+  tasks:
+  - name: ping all device
+    ping:
+
+
+  - name: i am installing webserver on ubuntu 16.04
+    apt:
+     name: apache2
+     state: present 
