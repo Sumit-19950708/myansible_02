@@ -6,7 +6,7 @@
   - name: create a file
     file:
       name: /home/ubuntu/myfirst.txt
-      state: present
+      state: touch
 
   - name: i want to install webserver
     apt: 
