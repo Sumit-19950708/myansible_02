@@ -17,8 +17,21 @@
     apt: 
       name: apache2
       state: present
-
+    notify: restartwebserver
+      
   - name: Change index page
     template:
       src: myindex.j2
       dest: /var/www/html/index.html
+    notify: restartwebserver
+
+  handler:
+  - name: Change index page
+    service:
+      name: restartwebserver
+      service: restart
+
+      
+
+
+
