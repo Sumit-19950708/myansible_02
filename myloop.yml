@@ -6,7 +6,7 @@
   - name: install multi packeges
     apt:
       name: "{{ item }}"
-      status: present
+      state: present
     loop:
       - tree
       - git
