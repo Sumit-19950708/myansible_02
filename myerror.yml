@@ -12,6 +12,7 @@
     apt: 
       namee: tree
       state: present
+    ignore_errors: yes
 
   - name: My 3st task
     apt: 
