@@ -10,6 +10,6 @@
     loop:
       - tree
       - git
-      - wet
+      - wget
 
       
