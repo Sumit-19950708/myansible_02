@@ -9,6 +9,6 @@
       state: present
 
   - name: Change index page
-    templete:
+    template:
       src: myindex.j2
       dest: /var/www/html/index.html
