@@ -25,13 +25,13 @@
       dest: /var/www/html/index.html
     notify: restartwebserver
 
-  handler:
+  handlers:
   - name: Change index page
     service:
       name: restartwebserver
       service: restart
 
-      
+
 
 
 
