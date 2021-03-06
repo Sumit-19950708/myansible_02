@@ -1,0 +1,14 @@
+---
+- hosts: myubuntuservers
+  become: yes
+  tasks:
+
+  - name: i want to install webserver
+    apt: 
+      name: apache2
+      state: present
+
+  - name: Change index page
+    templete:
+      src: myindex.j2
+      dest: /var/www/html/index.html
