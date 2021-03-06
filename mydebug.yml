@@ -14,12 +14,11 @@
     apt:
       name: tree
       state: present
-      when: stderr_lines == ""
+      when: ramudisplay.stderr == ""
 
   - name: i want to install git
     apt:
       name: git
       state: present
-      when: stderr_lines !=""
+      when: ramudisplay.stderr !=""
 
-      
