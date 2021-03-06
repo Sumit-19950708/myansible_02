@@ -5,7 +5,7 @@
 
   - name: install multi packeges
     apt:
-      name: "{{ sumu }}"
+      name: "{{ item }}"
       state: present
     loop:
       - tree
