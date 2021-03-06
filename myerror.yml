@@ -1,0 +1,19 @@
+---
+- hosts: myubuntuservers
+  become: yes
+  tasks:
+
+  - name: My 1st task
+    apt: 
+      name: git
+      state: present
+
+  - name: My 2st task
+    apt: 
+      namee: tree
+      state: present
+
+  - name: My 3st task
+    apt: 
+      name: wget
+      state: present
