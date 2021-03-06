@@ -1,0 +1,15 @@
+---
+- hosts: myubuntuservers
+  become: yes
+  tasks:
+
+  - name: install multi packeges
+    apt:
+      name: "{{ item }}"
+      status: present
+    loop:
+    - tree
+    - git
+    - wet
+
+      
