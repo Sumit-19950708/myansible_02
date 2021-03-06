@@ -5,12 +5,12 @@
 
   - name: create a file
     file:
-      name: /home/ubuntu/myfirst.txt
+      name: /home/ubuntu/myfirst1.txt
       state: touch
 
-  - name: create a file
+  - name: create a directory
     file:
-      name: /home/ubuntu/myfirst.txt
+      name: /home/ubuntu/mynewdir.txt
       state: directory
 
   - name: i want to install webserver
