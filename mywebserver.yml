@@ -5,25 +5,25 @@
 
   - name: i am installing webserver on ubuntu 16.04
     apt:
-     name: apache2
+     name: "{{mywebpackforubuntu}}"
      state: present 
     when:  ansible_os_family== "Debian"
 
   - name: i want to start webserver on ubuntu 16.04
     service:
-     name: apache2
+     name: "{{mywebpackforubuntu}}"
      state: started 
     when:  ansible_os_family== "Debian"
 
 
   - name: i am installing webserver on RedHat
     yum:
-     name: httpd
+     name: "{{mywebpackforredhat}}"
      state: present 
     when:  ansible_os_family== "RedHat"
 
   - name: i want to start webserver on ubuntu 16.04
     service:
-     name: httpd
+     name: "{{mywebpackforredhat}}"
      state: started 
     when:  ansible_os_family== "RedHat"
