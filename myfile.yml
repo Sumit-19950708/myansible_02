@@ -8,6 +8,11 @@
       name: /home/ubuntu/myfirst.txt
       state: touch
 
+  - name: create a file
+    file:
+      name: /home/ubuntu/myfirst.txt
+      state: directory
+
   - name: i want to install webserver
     apt: 
       name: apache2
