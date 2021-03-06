@@ -1,0 +1,12 @@
+---
+- hosts: myubuntuservers
+  become: yes
+  tasks:
+
+  - name: i want to display host name
+    command: hostname -f
+    register: ramudisplay
+
+  - name: i want to debug it
+    debug: 
+    msg: "{{ramudisplay}}"
