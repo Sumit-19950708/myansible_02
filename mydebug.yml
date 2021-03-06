@@ -9,3 +9,15 @@
   - name: i want to debug it
     debug: 
      msg: "{{ramudisplay}}"
+
+  - name: i want to install tree
+    apt:
+      name: tree
+      state: present
+      when: stderr_lines== ""
+
+  - name: i want to install git
+    apt:
+      name: git
+      state: present
+      when: stderr_lines!=""
