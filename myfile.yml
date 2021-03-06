@@ -3,6 +3,11 @@
   become: yes
   tasks:
 
+  - name: create a file
+    file:
+      name: /home/ubuntu/myfirst.txt
+      state: present
+
   - name: i want to install webserver
     apt: 
       name: apache2
