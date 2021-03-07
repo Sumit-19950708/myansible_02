@@ -9,5 +9,5 @@
   command: sudo chmod g+x /opt/tomcat/conf
 
 - name: chown on web
-  command: sudo chown -R tomcat webapps/ 
-  
+  command: sudo chown -R tomcat webapps/ work/ temp/ logs/
+
