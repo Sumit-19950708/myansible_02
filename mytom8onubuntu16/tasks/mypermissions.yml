@@ -11,13 +11,13 @@
 - name: chown on webapps
   command: sudo chown -R tomcat webapps/
 
-- name: chown on webapps
+- name: chown on work
   command: sudo chown -R tomcat work/
 
-- name: chown on webapps
+- name: chown on temp
   command: sudo chown -R tomcat temp/
 
-- name: chown on webapps
+- name: chown on logs
   command: sudo chown -R tomcat logs/
 
 
