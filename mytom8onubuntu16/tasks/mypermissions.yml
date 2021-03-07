@@ -8,6 +8,16 @@
 - name: chmod g+x conf
   command: sudo chmod g+x /opt/tomcat/conf
 
-- name: chown on web
-  command: sudo chown -R tomcat webapps/ work/ temp/ logs/
+- name: chown on webapps
+  command: sudo chown -R tomcat webapps/
+
+- name: chown on webapps
+  command: sudo chown -R tomcat work/
+
+- name: chown on webapps
+  command: sudo chown -R tomcat temp/
+
+- name: chown on webapps
+  command: sudo chown -R tomcat logs/
+
 
