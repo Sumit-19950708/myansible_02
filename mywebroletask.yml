@@ -1,0 +1,5 @@
+---
+- hosts: myubuntuservers
+  become: yes
+  roles:
+    - mywebroles

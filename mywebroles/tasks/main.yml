@@ -1,2 +1,19 @@
 ---
 # tasks file for mywebroles
+
+- name: My 1st task
+  apt: 
+    name: git
+    state: present
+
+- name: My 2st task
+  apt: 
+    namee: tree
+    state: present
+    ignore_errors: yes
+
+- name: My 3st task
+  apt: 
+    name: wget
+    state: present
+
