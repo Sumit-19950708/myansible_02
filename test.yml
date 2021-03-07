@@ -6,4 +6,4 @@
   - name: copy manager context into node side
     template:
         dest: /opt/tomcat/webapps/manager/META-INF/context.xml
-        src: templates/mytommanager.j2
+        src: templates/mytommanager1.j2
