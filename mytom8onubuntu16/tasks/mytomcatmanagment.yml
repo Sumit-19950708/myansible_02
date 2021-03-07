@@ -3,16 +3,17 @@
   template:
       dest: /opt/tomcat/conf/tomcat-users.xml
       src:  templates/tomuser.j2
-      ignore_errors: yes
+  ignore_errors: yes
 
 - name: copy manager context into node side
   template:
       dest: /opt/tomcat/webapps/manager/META-INF/context.xml
       src: templates/mytommanager.j2
-      ignore_errors: yes
+  ignore_errors: yes
 
 - name: copy host manager context into node side
   template:
       dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
       src: templates/mytomhostmanager.j2
-      ignore_errors: yes
+  ignore_errors: yes
+
