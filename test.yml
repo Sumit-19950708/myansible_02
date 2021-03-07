@@ -3,7 +3,7 @@
   become: yes
   tasks:
 
-- name: copy manager context into node side
-  template:
-      dest: /opt/tomcat/webapps/manager/META-INF/context.xml
-      src: templates/mytommanager.j2
+  - name: copy manager context into node side
+    template:
+        dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+        src: templates/mytommanager.j2
