@@ -9,15 +9,15 @@
   command: sudo chmod g+x /opt/tomcat/conf
 
 - name: chown on webapps
-  command: sudo chown -R tomcat webapps/
+  command: sudo chown -R tomcat /opt/tomcat/webapps/
 
 - name: chown on work
-  command: sudo chown -R tomcat work/
+  command: sudo chown -R tomcat /opt/tomcat/work/
 
 - name: chown on temp
-  command: sudo chown -R tomcat temp/
+  command: sudo chown -R tomcat /opt/tomcat/temp/
 
 - name: chown on logs
-  command: sudo chown -R tomcat logs/
+  command: sudo chown -R tomcat /opt/tomcat/logs/
 
 
