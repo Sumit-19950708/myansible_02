@@ -2,12 +2,12 @@
 - name: change group
   command: sudo chgrp -R tomcat /opt/tomcat
 
-- name: change group
-  command: sudo chmod -R g+r conf
+- name: chmod -R g+r
+  command: sudo chmod -R g+r /opt/tomcat/conf
 
-- name: change group
-  command: sudo chmod g+x conf
+- name: chmod g+x conf
+  command: sudo chmod g+x /opt/tomcat/conf
 
-- name: change group
-  command: sudo chown -R tomcat webapps/ work/ temp/ logs/
-
+- name: chown on web
+  command: sudo chown -R tomcat webapps/ 
+  
