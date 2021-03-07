@@ -1,0 +1,24 @@
+---
+- hosts: 172.31.34.50
+  become: yes
+  tasks:
+  - name: execute linux command
+    command: hostname -f
+    register: myresult
+
+  - name: display myresult
+    debug:
+      msg: "{{myresult}}"
+
+  - name: install git
+    apt:
+     name: git
+     state: present
+    when: myresult.stderr ==""
+
+  - name: install tree
+    apt:
+      name: tree
+      state: present
+    when: myresult.stderr !=""
+  

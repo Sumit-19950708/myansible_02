@@ -1,0 +1,33 @@
+---
+- hosts: 172.31.34.50
+  become: yes
+  tasks:
+  - include_tasks: myfile.yml
+
+  - name: install webservers on ubuntu
+    apt:
+      name: apache2
+      state: present
+    notify: restartwebservers
+
+
+  - name: copy index.j2 file into ansible node side
+    template:
+      src: index.j2
+      dest: /var/www/html/index.html
+    notify: restartwebservers
+
+    
+  handlers:
+  - name: restartwebservers
+    service:
+      name: apache2
+      state: restarted
+
+
+
+
+  
+
+
+      
