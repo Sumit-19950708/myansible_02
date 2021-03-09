@@ -4,8 +4,3 @@
     state: restarted
     daemon_reload: yes
     name: tomcat
-
-- name: reload service httpd, in all cases
-  systemd:
-    name: httpd
-    state: reloaded
