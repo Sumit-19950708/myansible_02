@@ -1,0 +1,7 @@
+---
+- name: tomcat uses port 8080 to accept conventional requests.
+  command: sudo ufw allow 8080
+
+- name: tomcat automatically starts at boot.
+  command: sudo systemctl enable tomcat
+
