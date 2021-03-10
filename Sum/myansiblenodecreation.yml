@@ -4,7 +4,7 @@
   tasks: 
   - name: create ansible node
     ec2:
-      key_name: myOhiokey
+      key_name: New_key
       instance_type: t2.micro
       image: ami-07423dea2f0ec1972
       wait: yes
@@ -15,3 +15,4 @@
       assign_public_ip: yes
       instance_tags:
         name: ansiblenodes
+        
