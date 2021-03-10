@@ -7,6 +7,7 @@
 - include_tasks: mypermissions.yml
 - include_tasks: mymytomcatconfig.yml
 - include_tasks: mytomcatstart.yml
+- include_tasks: mytomcatadjustfitwall.yml
 - include_tasks: mytomcatmanagment.yml
 - include_tasks: mytomcatrestart.yml
 - include_tasks: myjavaAppdeploy.yml
