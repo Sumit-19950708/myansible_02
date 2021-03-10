@@ -1,3 +1,6 @@
+[localhost]
+localhost
+
 [mywebservers]
 172.31.202.107
 172.31.5.14
